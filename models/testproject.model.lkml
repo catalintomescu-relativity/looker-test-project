@@ -30,6 +30,14 @@ explore: client {
   }
 }
 
+explore: code {
+  join: artifact {
+    type: left_outer
+    sql_on: ${code.artifact_id} = ${artifact.parent_artifact_id} ;;
+    relationship: many_to_one
+  }
+}
+
 explore: document {
   join: artifact {
     type: left_outer
