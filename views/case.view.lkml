@@ -4,6 +4,7 @@ view: case {
 
   dimension: artifact_id {
     type: number
+    primary_key: yes
     # hidden: yes
     sql: ${TABLE}.ArtifactID ;;
   }
